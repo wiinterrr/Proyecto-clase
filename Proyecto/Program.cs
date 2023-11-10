@@ -74,7 +74,7 @@ namespace Proyecto
                     case 0:
                         break;
                     case 1: Console.WriteLine("Escribe el código y entrenador, separados por un blanco");
-                        palabra = Console.ReadLine() Spl.t ();
+                        palabra = Console.ReadLine() Spl.t();
                         if (palabra.Length != 2)
                         {
                             Console.WriteLine("No has entrado bien los datos");
@@ -113,7 +113,16 @@ namespace Proyecto
                             Console.WriteLine("El entrenador es: " + mi_lista.equipo[res].entrenador);
                             break;
                         }
-                    default: Console.WriteLine("")
+                    default: Console.WriteLine("Código de operacion incorrecto");
+                        break;
+                }
+                Console.WriteLine("Qué operacion quieres realizar?");
+                Console.WriteLine("0: Terminar");
+                Console.WriteLine("1: Añadir equipo");
+                Console.WriteLine("2: Buscar equipo");
+                opcion = Convert.ToInt32(Console.ReadLine());
+                {
+                    Console.WriteLine("adios pepe");
                 }
             }
         }
